@@ -1,0 +1,33 @@
+# Dependencies and build output
+node_modules
+dist
+
+# Secrets and local data (the SQLite database holds real sales data)
+.env
+data/
+
+# Local tool settings
+.claude/
+
+# Raw source assets (~1.3 GB, some files over GitHub's 100 MB limit). The game uses the converted, slimmed
+# copies in public/models; rebuild them with tools/blender/*.py from these sources if needed.
+/charaters in glb/
+/houses and random places/
+/new glb/
+/vehicles/
+/tools/characters_src/
+/tools/assets_src/
+*.zip
+*.crdownload
+*.blend1
+
+# Copyrighted songs are not redistributed: drop your own MP3s into public/audio/music/ (see music.ts for names).
+# The game's own theme is kept.
+/songs/
+/public/audio/music/*
+!/public/audio/music/theme.mp3
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
